@@ -2,9 +2,9 @@ import React from "react";
 import { useFormContext } from "../../context/FormContext";
 
 const MyForm: React.FC = () => {
-  const { formDataContext } = useFormContext(); // Get submissions from context
+  const { formDataContext } = useFormContext();
 
-  // Images corresponding to ratings
+ 
   const images = [
     { src: "/1.png", name: "Worst", rating: "1" },
     { src: "/2.png", name: "Not Good", rating: "2" },

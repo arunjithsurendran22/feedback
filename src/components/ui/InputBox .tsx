@@ -1,4 +1,4 @@
-// src/components/InputBox.tsx
+
 import React from "react";
 
 interface InputBoxProps {

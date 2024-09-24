@@ -116,7 +116,7 @@ const Form: React.FC = () => {
             <InputBox
               label="Contact Number"
               name="contact"
-              type="tel"
+              type="number"
               value={formData.contact}
               onChange={handleChange}
             />

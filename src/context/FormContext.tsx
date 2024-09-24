@@ -1,7 +1,5 @@
-// FormContext.tsx
 import React, { createContext, useContext, useState } from "react";
 
-// Define the shape of the form data
 interface FormData {
   name: string;
   contact: string;
@@ -10,13 +8,11 @@ interface FormData {
   rating: string;
 }
 
-// Create the context
 const FormContext = createContext<{
   formDataContext: FormData[];
   setFormDataContext: React.Dispatch<React.SetStateAction<FormData[]>>;
 } | null>(null);
 
-// Create a provider component
 export const FormProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
@@ -29,7 +25,6 @@ export const FormProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-// Custom hook to use the FormContext
 export const useFormContext = () => {
   const context = useContext(FormContext);
   if (!context) {

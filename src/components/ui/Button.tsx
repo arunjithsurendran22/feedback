@@ -1,12 +1,12 @@
-// src/components/Button.tsx
+
 import React from 'react';
 
 interface ButtonProps {
   label: string;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  type?: 'button' | 'submit' | 'reset';  // Button types
+  type?: 'button' | 'submit' | 'reset';  
   disabled?: boolean;
-  className?: string;  // Optional className for custom styles
+  className?: string;  
 }
 
 const Button: React.FC<ButtonProps> = ({
